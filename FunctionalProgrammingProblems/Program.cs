@@ -12,6 +12,7 @@
             Console.WriteLine("5. Prime Factors");
             Console.WriteLine("6. Quotient and Remainder");
             Console.WriteLine("7. Swap Two Numbers");
+            Console.WriteLine("8. Check Whether a Number is Even or Odd");
             int n = Convert.ToInt32(Console.ReadLine());
             switch (n)
             {
@@ -49,6 +50,11 @@
                     SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();
                     swapTwoNumbers.SwapNumbers();
                     Console.WriteLine();
+
+                    break;
+                case 8:
+                    EvenOddCheck evenOddCheck = new EvenOddCheck();
+                    evenOddCheck.CheckEvanOdd();
 
                     break;
                 default:
