@@ -9,6 +9,7 @@
             Console.WriteLine("2. Leap Year");
             Console.WriteLine("3. Power of Two");
             Console.WriteLine("4. Harmonic Number");
+            Console.WriteLine("5. Prime Factors");
             int n = Convert.ToInt32(Console.ReadLine());
             switch (n)
             {
@@ -30,6 +31,11 @@
                 case 4:
                     HarmonicNumber harmonicNumber = new HarmonicNumber();
                     harmonicNumber.HarmonicCalculator();
+                    Console.WriteLine();
+                    break;
+                case 5:
+                    PrimeFactorOfNumbers primeFactorOfNumbers = new PrimeFactorOfNumbers();
+                    primeFactorOfNumbers.PrimeFactor();
                     Console.WriteLine();
                     break;
                 default:
