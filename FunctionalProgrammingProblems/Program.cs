@@ -13,6 +13,7 @@
             Console.WriteLine("6. Quotient and Remainder");
             Console.WriteLine("7. Swap Two Numbers");
             Console.WriteLine("8. Check Whether a Number is Even or Odd");
+            Console.WriteLine("9. Alphabet is Vowel or Consonant");
             int n = Convert.ToInt32(Console.ReadLine());
             switch (n)
             {
@@ -55,6 +56,12 @@
                 case 8:
                     EvenOddCheck evenOddCheck = new EvenOddCheck();
                     evenOddCheck.CheckEvanOdd();
+
+                    break;
+                case 9:
+                    CheckAlphabets checkAlphabets = new CheckAlphabets();
+                    checkAlphabets.CheckVowel();
+                    Console.WriteLine();
 
                     break;
                 default:
